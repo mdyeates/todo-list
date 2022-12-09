@@ -61,7 +61,7 @@ li {
   align-items: center;
   justify-content: space-between;
   list-style-type: none;
-  font-size: 22px;
+  font-size: 2vw;
   cursor: grab;
   background-color: var(--alt-bg-color);
   border-radius: 2px;
@@ -86,6 +86,10 @@ button:hover {
   background-color: var(--turqoise-alt-color);
   cursor: pointer;
   color: var(--white-alt-color);
+}
+
+button:active {
+  transform: scale(0.98);
 }
 
 #todo-list {
