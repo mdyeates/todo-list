@@ -67,8 +67,12 @@ li {
   border-radius: 2px;
 }
 
-li:hover {
+li:active {
   scale: 0.99;
+}
+
+li:hover {
+  background-color: #43474d;
 }
 
 button {
