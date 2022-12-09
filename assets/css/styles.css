@@ -1,0 +1,93 @@
+:root {
+  --bg-color: #222831;
+  --alt-bg-color: #393e46;
+  --white-color: #eeeeee;
+  --white-alt-color: #eeeeee;
+  --turqoise-alt-color: #00adb5;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  line-height: 1.5;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+::placeholder {
+  border-style: none;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+}
+
+input {
+  width: 25%;
+  padding: 10px;
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  border: 1px solid var(--alt-bg-color);
+  text-align: center;
+  font-size: 16px;
+  border-radius: 2px;
+}
+
+input:focus {
+  color: var(--white-color);
+  text-align: center;
+  outline: 1px solid var(--turqoise-alt-color);
+}
+
+.container {
+  margin: 50px auto;
+  width: 90%;
+  background-image: linear-gradient(rgba(57, 62, 70, 0.3), rgba(34, 40, 49, 0.5));
+  padding: 20px;
+  border-radius: 2px;
+}
+
+li {
+  width: 80%;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 22px;
+  cursor: grab;
+  background-color: var(--alt-bg-color);
+  border-radius: 2px;
+}
+
+li:hover {
+  scale: 0.99;
+}
+
+button {
+  padding: 10px;
+  width: 20%;
+  margin-left: 20px;
+  font-size: 14px;
+  background-color: var(--bg-color);
+  color: var(--turqoise-alt-color);
+  border: #484d55 solid 1px;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: var(--turqoise-alt-color);
+  cursor: pointer;
+  color: var(--white-alt-color);
+}
+
+#todo-list {
+  padding-left: 0;
+}
