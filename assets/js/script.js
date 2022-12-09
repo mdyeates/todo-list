@@ -33,6 +33,8 @@ $(document).ready(function () {
           });
         // update todo count if todo is completed
         $("#todo-count").text((toDoCount -= 1));
+        // disable button after click
+        $(this).prop("disabled", true);
       });
     }
   });
