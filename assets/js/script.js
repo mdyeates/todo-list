@@ -56,7 +56,9 @@ $(document).ready(function () {
     var toDoListEl = $("#todo-list");
 
     todos.forEach((todo) => {
-      $(toDoListEl).prepend("<li class='item'>" + todo + " <button class='completed'>Completed</button>" + "</li>");
+      $(toDoListEl).prepend(
+        "<li class='item'>" + todo.task + " <button class='completed'>Completed</button>" + "</li>"
+      );
     });
 
     // update todo count
